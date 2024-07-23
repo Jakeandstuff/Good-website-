@@ -1,0 +1,123 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+header {
+    background-image: linear-gradient(rgba(7, 7, 7, 0.5),rgba(146, 146, 146, 0.5),rgba(0, 0, 0, 0.5)), url(forest.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: -2;
+    min-height: 100px;
+    z-index: 1;
+}
+
+ul {
+    float: right;
+    list-style-type: none;
+    margin-top: 30px;
+    margin-right: 60px;
+    font-size: 16px;
+    z-index: 1;
+}
+
+ul li {
+    display: inline-block;
+    z-index: 1;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 5px 20px;
+    border: 1px solid transparent;
+    transition: 0.3s ease;
+    z-index: 1;
+}
+
+ul li a:hover {
+    background-color: #074e274b;
+    color: #ffffff;
+    letter-spacing: 0.10em;
+    box-shadow: 0 0 35px var(--clr);
+    opacity: 100%;
+    z-index: 1;
+}
+
+ul li.active a {
+    background-color: transparent;
+    opacity: 100%;
+    box-shadow: 0 0 35px var(--clr);
+    z-index: 1;
+}
+
+.logo {
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    z-index: 1;
+}
+
+.logo img {
+    float: left;
+    width: 75px;
+    height: 55px;
+    padding-top: 11px;
+    filter: invert(100%);
+    position: absolute;
+    left: 22px;
+    z-index: 1;
+}
+
+.main {
+    max-width: auto;
+    margin: auto;
+    padding-left: 20px;
+    z-index: 1;
+}
+
+.title {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.title h1 {
+    color: #fff;
+    font-size: 70px;
+    z-index: 1;
+}
+
+.button {
+    position: absolute;
+    top: 54%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.box {
+    width: 90px;
+    height: 50px;
+    border: 5px solid #ffffff17;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #ffffff0c;
+    z-index: 1;
+}
+
+.line {
+    width: 100vw;
+    height: 80px;
+    background-color: #00000067;
+    position: absolute;
+    z-index: -1;
+}
