@@ -1,13 +1,13 @@
 * {
-    margin: 0px;
-    padding: 0px;
-    font-family:Verdana, Geneva, Tahoma, sans-serif
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 header {
-    background-image: linear-gradient(rgba(7, 7, 7, 0.5),rgba(146, 146, 146, 0.5),rgba(0, 0, 0, 0.5)), url(forest.jpg);
-    height: 100vh;
+    background-image: linear-gradient(rgba(7, 7, 7, 0.5),rgba(146, 146, 146, 0.5),rgba(0, 0, 0, 0.5)), url(bob.jpg);
     background-size: cover;
+    height: 100vh;
     background-position: center;
     position: relative;
     z-index: -2;
@@ -39,7 +39,7 @@ ul li a {
 }
 
 ul li a:hover {
-    background-color: #074e274b;
+    background-color: rgba(66, 134, 189, 0.643);
     color: #ffffff;
     letter-spacing: 0.10em;
     box-shadow: 0 0 35px var(--clr);
@@ -83,7 +83,7 @@ ul li.active a {
 
 .title {
     position: absolute;
-    top: 35%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 1;
@@ -95,29 +95,73 @@ ul li.active a {
     z-index: 1;
 }
 
-.button {
+/* Gallery Section */
+.gallery {
     position: absolute;
-    top: 54%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+    color: white;
+    z-index: 1; /* Ensure gallery content is on top of the background */
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    z-index: 1;
+    background-image: url(forest.jpg);
+    
+}
+
+.image-container {
+    padding-top: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px; /* Space between images */
+    padding-left: 150px;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
     z-index: 1;
 }
 
-.box {
-    width: 90px;
-    height: 50px;
-    border: 5px solid #ffffff17;
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    background-color: #ffffff0c;
+.image-container img {
+    width: 500px; /* Reduced size to fit in the screen */
+    height: 350px;
+    object-fit: cover;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
     z-index: 1;
 }
 
-.line {
-    width: 100vw;
-    height: 80px;
-    background-color: #00000067;
-    position: absolute;
-    z-index: -1;
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .image-container img {
+        width: 90%; /* Make images take up more width on smaller screens */
+    }
 }
+
+.gardeningtitle {
+    position: absolute; /* Position relative to the nearest positioned ancestor (header) */
+    top: 75px; /* Distance from the top of the header */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Shift horizontally to fully center */
+    font-size: 30px;
+    color: #fff;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    z-index: 1;
+}
+
